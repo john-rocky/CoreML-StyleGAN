@@ -2,6 +2,8 @@
 
 The Sample project how to use CoreML model of [MobileStyleGAN](https://github.com/bes-dev/MobileStyleGAN.pytorch) in the Xcode project.
 
+<img width="256" src="https://user-images.githubusercontent.com/23278992/147398067-03c1d145-5617-4a53-b79b-5458e7d5891e.PNG"> 
+
 The models in this project are compiled as "mlmodelc" format. 
 If you want CoreML model ("mlmodel" format), get from [CoreML-Models](https://github.com/john-rocky/CoreML-Models).
 
