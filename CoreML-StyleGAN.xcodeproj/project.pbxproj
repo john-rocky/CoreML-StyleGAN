@@ -16,6 +16,10 @@
 		737BBCCB277808CB007A38F3 /* CoreML_StyleGANTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BBCCA277808CB007A38F3 /* CoreML_StyleGANTests.swift */; };
 		737BBCD5277808CB007A38F3 /* CoreML_StyleGANUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BBCD4277808CB007A38F3 /* CoreML_StyleGANUITests.swift */; };
 		737BBCD7277808CB007A38F3 /* CoreML_StyleGANUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BBCD6277808CB007A38F3 /* CoreML_StyleGANUITestsLaunchTests.swift */; };
+		737BBCE9277815FF007A38F3 /* synthesisNetwork.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 737BBCE7277815FF007A38F3 /* synthesisNetwork.mlmodelc */; };
+		737BBCEA277815FF007A38F3 /* synthesisNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BBCE8277815FF007A38F3 /* synthesisNetwork.swift */; };
+		737BBCED27781629007A38F3 /* mappingNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 737BBCEB27781628007A38F3 /* mappingNetwork.swift */; };
+		737BBCEE27781629007A38F3 /* mappingNetwork.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = 737BBCEC27781628007A38F3 /* mappingNetwork.mlmodelc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		737BBCD0277808CB007A38F3 /* CoreML-StyleGANUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-StyleGANUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		737BBCD4277808CB007A38F3 /* CoreML_StyleGANUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_StyleGANUITests.swift; sourceTree = "<group>"; };
 		737BBCD6277808CB007A38F3 /* CoreML_StyleGANUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_StyleGANUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		737BBCE7277815FF007A38F3 /* synthesisNetwork.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = synthesisNetwork.mlmodelc; sourceTree = "<group>"; };
+		737BBCE8277815FF007A38F3 /* synthesisNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = synthesisNetwork.swift; sourceTree = "<group>"; };
+		737BBCEB27781628007A38F3 /* mappingNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mappingNetwork.swift; sourceTree = "<group>"; };
+		737BBCEC27781628007A38F3 /* mappingNetwork.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = mappingNetwork.mlmodelc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +110,10 @@
 				737BBCB3277808C2007A38F3 /* AppDelegate.swift */,
 				737BBCB5277808C2007A38F3 /* SceneDelegate.swift */,
 				737BBCB7277808C2007A38F3 /* ViewController.swift */,
+				737BBCE7277815FF007A38F3 /* synthesisNetwork.mlmodelc */,
+				737BBCE8277815FF007A38F3 /* synthesisNetwork.swift */,
+				737BBCEC27781628007A38F3 /* mappingNetwork.mlmodelc */,
+				737BBCEB27781628007A38F3 /* mappingNetwork.swift */,
 				737BBCB9277808C2007A38F3 /* Main.storyboard */,
 				737BBCBC277808CB007A38F3 /* Assets.xcassets */,
 				737BBCBE277808CB007A38F3 /* LaunchScreen.storyboard */,
@@ -231,6 +243,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				737BBCEE27781629007A38F3 /* mappingNetwork.mlmodelc in Resources */,
+				737BBCE9277815FF007A38F3 /* synthesisNetwork.mlmodelc in Resources */,
 				737BBCC0277808CB007A38F3 /* LaunchScreen.storyboard in Resources */,
 				737BBCBD277808CB007A38F3 /* Assets.xcassets in Resources */,
 				737BBCBB277808C2007A38F3 /* Main.storyboard in Resources */,
@@ -259,6 +273,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				737BBCB8277808C2007A38F3 /* ViewController.swift in Sources */,
+				737BBCEA277815FF007A38F3 /* synthesisNetwork.swift in Sources */,
+				737BBCED27781629007A38F3 /* mappingNetwork.swift in Sources */,
 				737BBCB4277808C2007A38F3 /* AppDelegate.swift in Sources */,
 				737BBCB6277808C2007A38F3 /* SceneDelegate.swift in Sources */,
 			);
@@ -447,6 +463,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,6 +492,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

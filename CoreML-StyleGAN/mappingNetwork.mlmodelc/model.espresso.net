@@ -1,0 +1,442 @@
+{
+  "storage" : "model.espresso.weights",
+  "analyses" : {
+
+  },
+  "properties" : {
+
+  },
+  "format_version" : 200,
+  "metadata_in_weights" : [
+
+  ],
+  "layers" : [
+    {
+      "bottom" : "var",
+      "alpha" : 2,
+      "operation" : 13,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "16",
+      "top" : "16",
+      "type" : "elementwise",
+      "name" : "16",
+      "beta" : 0
+    },
+    {
+      "axis_mode" : 1,
+      "bottom" : "16",
+      "weights" : {
+
+      },
+      "mode" : 1,
+      "nd_axis" : 1,
+      "nd_mode" : true,
+      "debug_info" : "18",
+      "use_version" : 1,
+      "top" : "18",
+      "type" : "reduce",
+      "name" : "18"
+    },
+    {
+      "bottom" : "18",
+      "alpha" : 9.9999999392252903e-09,
+      "operation" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "20",
+      "top" : "20",
+      "type" : "elementwise",
+      "name" : "20",
+      "beta" : 0
+    },
+    {
+      "bottom" : "20",
+      "alpha" : 1,
+      "operation" : 12,
+      "eps" : 9.999999960041972e-13,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "21",
+      "top" : "21",
+      "type" : "elementwise",
+      "name" : "21",
+      "beta" : 0
+    },
+    {
+      "bottom" : "var,21",
+      "alpha" : 1,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.1",
+      "top" : "input.1",
+      "type" : "elementwise",
+      "name" : "input.1",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input.5",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 3,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.1",
+      "blob_biases" : 1,
+      "has_tanh" : 0,
+      "debug_info" : "input.5",
+      "name" : "input.5",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input.5",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "34",
+      "top" : "34",
+      "type" : "activation",
+      "name" : "34"
+    },
+    {
+      "bottom" : "34",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.7",
+      "top" : "input.7",
+      "type" : "elementwise",
+      "name" : "input.7",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input.11",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 7,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.7",
+      "blob_biases" : 5,
+      "has_tanh" : 0,
+      "debug_info" : "input.11",
+      "name" : "input.11",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input.11",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "48",
+      "top" : "48",
+      "type" : "activation",
+      "name" : "48"
+    },
+    {
+      "bottom" : "48",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.13",
+      "top" : "input.13",
+      "type" : "elementwise",
+      "name" : "input.13",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input.17",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 11,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.13",
+      "blob_biases" : 9,
+      "has_tanh" : 0,
+      "debug_info" : "input.17",
+      "name" : "input.17",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input.17",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "62",
+      "top" : "62",
+      "type" : "activation",
+      "name" : "62"
+    },
+    {
+      "bottom" : "62",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.19",
+      "top" : "input.19",
+      "type" : "elementwise",
+      "name" : "input.19",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input.23",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 15,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.19",
+      "blob_biases" : 13,
+      "has_tanh" : 0,
+      "debug_info" : "input.23",
+      "name" : "input.23",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input.23",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "76",
+      "top" : "76",
+      "type" : "activation",
+      "name" : "76"
+    },
+    {
+      "bottom" : "76",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.25",
+      "top" : "input.25",
+      "type" : "elementwise",
+      "name" : "input.25",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input.29",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 19,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.25",
+      "blob_biases" : 17,
+      "has_tanh" : 0,
+      "debug_info" : "input.29",
+      "name" : "input.29",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input.29",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "90",
+      "top" : "90",
+      "type" : "activation",
+      "name" : "90"
+    },
+    {
+      "bottom" : "90",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.31",
+      "top" : "input.31",
+      "type" : "elementwise",
+      "name" : "input.31",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input.35",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 23,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.31",
+      "blob_biases" : 21,
+      "has_tanh" : 0,
+      "debug_info" : "input.35",
+      "name" : "input.35",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input.35",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "104",
+      "top" : "104",
+      "type" : "activation",
+      "name" : "104"
+    },
+    {
+      "bottom" : "104",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.37",
+      "top" : "input.37",
+      "type" : "elementwise",
+      "name" : "input.37",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input.41",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 27,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.37",
+      "blob_biases" : 25,
+      "has_tanh" : 0,
+      "debug_info" : "input.41",
+      "name" : "input.41",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input.41",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "118",
+      "top" : "118",
+      "type" : "activation",
+      "name" : "118"
+    },
+    {
+      "bottom" : "118",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "input.43",
+      "top" : "input.43",
+      "type" : "elementwise",
+      "name" : "input.43",
+      "beta" : 0
+    },
+    {
+      "nB" : 512,
+      "top" : "input",
+      "has_biases" : 1,
+      "weights" : {
+
+      },
+      "nC" : 512,
+      "blob_weights" : 31,
+      "type" : "inner_product",
+      "has_relu" : 0,
+      "bottom" : "input.43",
+      "blob_biases" : 29,
+      "has_tanh" : 0,
+      "debug_info" : "input",
+      "name" : "input",
+      "has_prelu" : 0
+    },
+    {
+      "alpha" : 0.20000000298023224,
+      "bottom" : "input",
+      "weights" : {
+
+      },
+      "mode" : 2,
+      "debug_info" : "132",
+      "top" : "132",
+      "type" : "activation",
+      "name" : "132"
+    },
+    {
+      "bottom" : "132",
+      "alpha" : 1.4142135381698608,
+      "operation" : 1,
+      "beta" : 0,
+      "weights" : {
+
+      },
+      "fused_relu" : 0,
+      "debug_info" : "var_134",
+      "top" : "var_134",
+      "type" : "elementwise",
+      "name" : "var_134",
+      "attributes" : {
+        "is_output" : 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "metadataOutputVersion" : "3.0",
+    "storagePrecision" : "Float32",
+    "outputSchema" : [
+      {
+        "height" : "1024",
+        "colorspace" : "RGB",
+        "isOptional" : "0",
+        "width" : "1024",
+        "isColor" : "1",
+        "formattedType" : "Image (Color 1024 × 1024)",
+        "hasSizeFlexibility" : "0",
+        "type" : "Image",
+        "shortDescription" : "",
+        "name" : "activation_out"
+      }
+    ],
+    "modelParameters" : [
+
+    ],
+    "specificationVersion" : 4,
+    "computePrecision" : "Float16",
+    "isUpdatable" : "0",
+    "availability" : {
+      "macOS" : "10.15",
+      "tvOS" : "13.0",
+      "watchOS" : "6.0",
+      "iOS" : "13.0",
+      "macCatalyst" : "13.0"
+    },
+    "neuralNetworkLayerTypeHistogram" : {
+      "InnerProduct" : 23,
+      "Convolution" : 30,
+      "ReshapeStatic" : 31,
+      "LoadConstantND" : 31,
+      "SplitND" : 8,
+      "Squeeze" : 25,
+      "Deconvolution" : 48,
+      "Add" : 54,
+      "Multiply" : 39,
+      "Slice" : 16,
+      "ActivationLeakyReLU" : 15,
+      "ActivationLinear" : 1
+    },
+    "modelType" : {
+      "name" : "MLModelType_neuralNetwork"
+    },
+    "userDefinedMetadata" : {
+      "com.github.apple.coremltools.version" : "5.1.0",
+      "com.github.apple.coremltools.source" : "torch==1.10.1"
+    },
+    "generatedClassName" : "synthesisNetwork",
+    "inputSchema" : [
+      {
+        "hasShapeFlexibility" : "0",
+        "isOptional" : "0",
+        "dataType" : "Float32",
+        "formattedType" : "MultiArray (Float32 1 × 512)",
+        "shortDescription" : "",
+        "shape" : "[1, 512]",
+        "name" : "style",
+        "type" : "MultiArray"
+      }
+    ],
+    "method" : "predict"
+  }
+]
