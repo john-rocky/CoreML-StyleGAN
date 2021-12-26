@@ -23,6 +23,6 @@ Daisuke Majima
 
 Freelance iOS programmer from Japan.
 
-BLOGS: Medium
+BLOGS: [Medium](https://rockyshikoku.medium.com/)
 
 CONTACTS: rockyshikoku@gmail.com
